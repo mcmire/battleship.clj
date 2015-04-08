@@ -7,5 +7,5 @@
         (with-redefs [rand-nth (constantly :foo)]
           (random/choose-orientation)))
 
-(expect (util/character-range  "A" "G")
+(expect ["A" "B" "C" "D" "E"]
         (random/available-starting-columns {:length 5}))

@@ -1,7 +1,8 @@
-(ns battleship.properties)
+(ns battleship.properties
+  (:require [battleship.util :as util]))
 
-
-(def columns (character-range \a \j))
+;(def columns (util/character-range \a \j))
+(def columns ["A" "B" "C" "D" "E" "F" "G" "H" "I" "J"])
 
 (def rows (range 1 10))
 
